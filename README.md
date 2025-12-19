@@ -1,4 +1,4 @@
-# 🛡️ DarkPacketClassifier
+#  DarkPacketClassifier
 
 **Système Intelligent de Classification du Trafic Réseau par Machine Learning**
 
@@ -7,7 +7,7 @@
 ![Scapy](https://img.shields.io/badge/Scapy-2.5.0-red.svg)
 ![Machine Learning](https://img.shields.io/badge/ML-Random%20Forest-orange.svg)
 
-## 📖 Présentation
+##  Présentation
 Le **DarkPacketClassifier** est une solution de cybersécurité permettant d'identifier en temps réel les applications et les menaces au sein d'un flux réseau, même si celui-ci est chiffré (HTTPS, TLS, VPN). 
 
 Contrairement aux solutions classiques de DPI (*Deep Packet Inspection*), cet outil utilise une **approche comportementale non-invasive** : il analyse la "silhouette" temporelle et volumétrique du trafic plutôt que le contenu des messages.
@@ -16,7 +16,7 @@ Contrairement aux solutions classiques de DPI (*Deep Packet Inspection*), cet ou
 
 ---
 
-## ✨ Fonctionnalités Clés
+##  Fonctionnalités Clés
 * **Capture Passive (Sniffing) :** Interception des paquets via Raw Sockets et interface en mode *Promiscuous*.
 * **Analyse de Trafic Chiffré :** Identification des applications sans déchiffrement.
 * **Détection de Malwares :** Reconnaissance des signatures comportementales (ex: Zeus, Virut).
@@ -25,7 +25,7 @@ Contrairement aux solutions classiques de DPI (*Deep Packet Inspection*), cet ou
 
 ---
 
-## 🏗️ Architecture du Projet (Clean Architecture)
+##  Architecture du Projet (Clean Architecture)
 Le projet est organisé pour séparer strictement les responsabilités :
 
 * **`src/api/`** : Gestion des routes FastAPI et de la communication temps réel (WebSockets).
@@ -35,7 +35,7 @@ Le projet est organisé pour séparer strictement les responsabilités :
 
 ---
 
-## 🧠 Pipeline de Machine Learning
+##  Pipeline de Machine Learning
 
 ### 1. Dataset & Entraînement
 Le modèle a été entraîné sur le dataset de référence **CIC-IDS2017**, enrichi par des captures réelles.
@@ -61,14 +61,20 @@ L'IA analyse **23 caractéristiques statistiques** extraites de chaque flux :
 
 ---
 
-## 🛠️ Installation et Lancement
+##  Installation et Lancement
 
 ### Prérequis
 * Python 3.9+
 * Privilèges `sudo` (requis pour l'accès aux interfaces réseau brutes)
 
 ### Installation
-```bash
-git clone [https://github.com/votre-nom/dark-packet-classifier.git](https://github.com/votre-nom/dark-packet-classifier.git)
+```bash``
+
+ ### Utilisation
+ sudo python main.py
+
+
+
+(https://github.com/votre-nom/dark-packet-classifier.git)
 cd dark-packet-classifier
 pip install -r requirements.txt  
