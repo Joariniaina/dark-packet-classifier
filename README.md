@@ -72,9 +72,5 @@ L'IA analyse **23 caractéristiques statistiques** extraites de chaque flux :
 
  ### Utilisation
  sudo python main.py
-
-
-
-(https://github.com/votre-nom/dark-packet-classifier.git)
 cd dark-packet-classifier
 pip install -r requirements.txt  
